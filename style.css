@@ -62,40 +62,81 @@
 }
 
 
-.ex-6-img, .ex-7-img, .ex-8-img {
+.ex-6-img{
     width: 500px;
     transition: all 1s ease 0s;
 }
 
-.ex-6-square:hover{
-
+.ex-6-img:hover{
+    filter: grayscale(100%);
 }
 
+.ex-7-img{
+    width: 500px;
+    transition: all 1s ease 0s;
+}
+
+.ex-7-img:hover{
+    filter: blur(5px) brightness(2);
+}
+
+.ex-8-img{
+    width: 500px;
+    transition: all 1s ease 0s;
+}
+
+.ex-8-img:hover{
+    filter: blur(5px) brightness(50%);
+    border-radius: 20px;
+}
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 1s ease 0s;
 }
 
-.ex-9-square:hover{
-
+.ex-9-img:hover{
+    filter: blur(5px) brightness(50%);
+    border-radius: 20px;
+    width: 200px;
 }
 
-.ex-10-icon {
+.ex-10-icon{
     font-size: 60px;
+    animation-name: fidget-spinner;
+    animation-duration: 1s;  /*secondi per fare un giro completo*/
+    animation-iteration-count: infinite; /*per farlo girare all'infinito*/
+    animation-timing-function: linear; /*per farlo girare in modo pulito*/
 }
 
-.ex-10-square:hover{
-
+@keyframes fidget-spinner{
+    0% { /*from*/
+        transform:rotate(0deg);
+    }
+    100% { /*to*/
+        transform:rotate(360deg);
+    }
 }
+
 
 .ex-11-icon {
     font-size: 60px;
+    animation-name: fidget-spinner-supremo;
+    animation-duration: 3s;  /*secondi per fare un giro completo*/
+    animation-iteration-count: infinite; /*per farlo girare all'infinito*/
+    animation-timing-function: linear; /*per farlo girare in modo pulito*/
 }
 
-.ex-11-square:hover{
-
+@keyframes fidget-spinner-supremo{
+    0% { /*from*/
+        transform:rotate(0deg);
+    }
+    100% { /*to*/
+        transform:rotate(270deg);
+    }
 }
+
 
 .ex-12-button, .ex-13-button {
     position: relative;
